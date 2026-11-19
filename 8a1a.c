@@ -31,7 +31,7 @@ int main() {
 
     printf("Index\tAddress\t\t\tValue\n");
     for (i = 0; i < n; i++) {
-        printf("%d\t%p\t%.2f\n", i, (void *)&darr[i], darr[i]);
+        printf("%d\t%p\t%.2f\n", i, &darr[i], darr[i]);
     }
 
 
