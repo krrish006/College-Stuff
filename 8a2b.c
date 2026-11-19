@@ -18,9 +18,7 @@ int main() {
     printf("Index\tAddress\t\t\tValue\n");
     for (i = 0; i < r; i++) {
         for (j = 0; j < c; j++) {
-            printf("[%d][%d]\t%p\t%d\n", i, j,
-                   (void *)(*(arr + i) + j),
-                   *(*(arr + i) + j));
+            printf("[%d][%d]\t%p\t%d\n", i, j,(*(arr + i) + j),*(*(arr + i) + j));
         }
     }
 
